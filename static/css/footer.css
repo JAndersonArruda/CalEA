@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fuzzy+Bubbles&family=Lobster&family=Silkscreen&display=swap');
+
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    padding: 0.7em;
+    margin-top: 45px;
+}
+
+.copyright {
+    background-color: #3b3b3b;
+    padding: 0.4em;
+    color: #ffffff;
+    font-family: 'Lobster', cursive;
+    font-size: 12px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 12px;
+}

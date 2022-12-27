@@ -1,0 +1,18 @@
+
+
+.position-navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.edent {
+    margin-left: 30px;
+}
+
+.edent-enter{
+    margin-left: 10px;
+}
+.edent-right {
+    margin-right: 30px;
+}

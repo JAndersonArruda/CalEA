@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/522/522506.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>CalEA</title>
+</head>
+<body>
+    <header class="position-navbar"> <!--Menu-->
+        <nav class="navbar navbar-expand-lg bg-dark"> 
+            <div class="container-fluid">
+                <div class="edent"></div>
+                <img style="width: 4%;" src="../static/img/logo-calculadora.1.png">
+                <div class="edent-enter"></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="dropGeneros" role="button" style="color: #ffffff;" href="#drop">Seções</a>
+                            <ul class="dropdown-menu bg-black">
+                                <li><a class="dropdown-item" id="link" style="color: #696969;" href="#top"><i>Abertura</i></a></li>
+                                <li><a class="dropdown-item" id="link" style="color: #696969;" href="#form"><i>Calcular</i></a></li>
+                                <li><a class="dropdown-item" id="link" style="color: #696969;" href="#stat"><i>Status</i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand" style="color: #ffffff;" href="../templates/mediaForm.html">CalEA</a>
+                <div class="edent-right"></div>
+            </div>        
+        </nav>
+    </header>
+
+    <main class="container text-center">
+        <section id="top" class="m-4"><!--Marcador de id-->
+            <br><br><br>
+            <div class="m-5"><!--Tela de Abertura-->
+                <h1 class="fs-1 fst-italic">CalEA</h1>
+                <p class="fst-italic fs-4">Alegria ou tristeza? Depende de você!...</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <img src="../static/img/Cara-Kerja-Laptop.jpg" class="img-fluid mx-auto d-block rounded-3" alt="">
+                </div>
+                <div class="col m-5">
+                    <h1 id="text" class="fs-4 fst-italic">Cansado de calcular sua media? Não sabe como?</h1>
+                    <h1 id="text" class="fs-4 fst-italic">Quer saber se está aprovado ou quanto falta para a final?</h1>
+
+                    <div class="m-4"><!--Linha-->
+                        <hr class="border-lyght border-3 opacity-75">
+                    </div>
+                    <div class="fst-italic">
+                        <p>
+                            O ClaEA foi desenvolvido para suprir suas expectativas, de fomra rápida e fácil... Então vem conosco!
+                        </p>
+                        <a href="#form">
+                            <button type="submit" class="btn btn-dark mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="form"><!--Marcador de id-->
+            <br>
+            <div class="m-5"><!--Linha-->
+                <hr class="border-lyght border-3 m-2 opacity-0">
+            </div>
+            <h1 class=" display-6 text-center mb-5">Calcular Média</h1>
+            <div class="container-mb5"><!--Formulario-->
+                
+                <form id="infoForm">
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" id="nome" name="name" class="form-control" placeholder="Maria Aparecida de Alcantara Neves" required>
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="grau" class="form-label">Turma:</label>
+                            <input type="text" id="grau" name="grau" class="form-control" placeholder="5° ano, 9° ano ou 3° médio" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label for="nt1" class="form-label">1° Nota:</label>
+                            <input type="number" id="nt1" name="nt1" class="form-control" placeholder="00 a 100" required>
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="nt2" class="form-label">2° Nota:</label>
+                            <input type="number" id="nt2" name="nt2" class="form-control" placeholder="00 a 100" required>
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="nt3" class="form-label">3° Nota:</label>
+                            <input type="number" id="nt3" name="nt3" class="form-control" placeholder="00 a 100" required>
+                        </div>
+                        <div class="mb-3 col">
+                            <label for="nt4" class="form-label">4° Nota:</label>
+                            <input type="number" id="nt4" name="nt4" class="form-control" placeholder="00 a 100" required>
+                        </div>
+                    </div>
+
+                    <div class="col-auto text-center">
+                        <a href="#final"><!--Tentei usar o id do resultado, porem não dava o efeito que queria-->
+                            <!-- <input type="button" id="calc" class="btn btn-dark mb-3" value="Calcular"> -->
+                            <button id="calc" type="submit" class="btn btn-dark mb-3">
+                                Calcular
+                            </button>
+                        </a>
+                    </div>
+                </form>
+            
+            </div>
+        </section>
+        <div class="m-5"><!--Linha-->
+            <hr class="border-lyght border-3 opacity-75">
+        </div>
+        <section id="resul"><!--Marcador de id-->
+            <h1 class="display-6 text-center mb-5">Resultado</h1>
+            <!--Relatori com o Resultado-->
+            <table class="table table-striped table-hover text-center">
+                <thead>
+                    <tr class="text-center table-dark m-5" colspan="2">
+                        <th>Nome</th>
+                        <th>Media</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td id="md">---</td>
+                        <td id="st">---</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>      
+        <div class="m-5"><!--Linha-->
+            <hr class="border-lyght border-3 opacity-75">
+        </div>
+        <section id="stat"><!--Marcador de id-->
+            <h1 class="display-6 text-center mb-5">Status</h1>
+            <!--Relatori com o Resultado-->
+            <table class="table table-striped table-hover text-center">
+                <thead>
+                    <tr class="text-center table-dark m-5" colspan="2">
+                        <th>Média</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td id="md">Acima de 70</td>
+                        <td id="st">Aprovado</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td id="st">Abaixo de 70</td>
+                        <td id="st">Final</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section> 
+    </main>
+
+    <div id="final" class="m-5"><!--Enter do cabeçalho-->
+        <hr class="border-lyght border-3 m-5 opacity-0">
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="copyright">
+                © 2022 Copyright:
+                <a href="#!">calea.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- <script src="../static/js/function.js"></script> -->
+    <script src="../static/js/calculo.js"></script>
+</body>
+</html>
